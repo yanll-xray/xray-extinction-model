@@ -20,16 +20,16 @@ yllext.mod was developed and tested using the following software environment:
 - Python 3.10
 
 Before running XSPEC or the model generation script, initialize HEASOFT:
-```bash
-source $HEADAS/headas-init.sh
+> source $HEADAS/headas-init.sh
 
 # 4. Generate Model
 Run the following script to generate the XSPEC table model:
 > python3 get_mod.py
+
 Output: yllext.mod
 
 # 5. XSPEC Usage
-model mtable{yllext.mod}*powerlaw
+XSPEC12> model mtable{yllext.mod}*powerlaw
 
 Parameters:
 - N_H (10^22 cm^-2)
@@ -37,9 +37,8 @@ Parameters:
 - Normalization (photons keV^-1 cm^-2 s^-1)
 
 # 6. Example Fit
-Start XSPEC
-> xspec
-Run full fitting pipeline
+Start XSPEC and run full fitting pipeline
+
 XSPEC12> @example.xcm
 
 This script will:
@@ -50,6 +49,6 @@ Generate residual plots
 Save PS output
 
 # 7. Citation
-Yan, L., Li, A., & Lu, F. (2026), ApJ, xxx, xxx 
+Linli Yan, Aigen Li, Fangjun Lu (2026), ApJ, xxx, xxx 
 Contact: Linli Yan (yan.linli@foxmail.com)
 
