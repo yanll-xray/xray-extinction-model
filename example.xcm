@@ -1,0 +1,26 @@
+############################################
+# Example XSPEC fitting script
+# YLL X-ray Extinction Model (Yan et al. 2026)
+# Crab pulsar NICER phase-averaged spectrum
+############################################
+
+data PAS_Crab_NICER.pha
+back PAS_bkg_Crab_NICER.pha
+resp nixtiref20170601v003.rmf
+arf  nixtiaveonaxis20170601v005.arf
+
+model mtable{yllext.mod}*powerlaw
+0.36
+1.5
+0.5
+
+ignore **-2.0
+ignore 10.0-**
+
+fit 100
+
+cpd crab_yllext.ps/cps
+setplot energy
+setplot rebin 5 20
+plot ld del
+cpd /null
