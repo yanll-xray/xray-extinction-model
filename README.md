@@ -30,7 +30,7 @@ Run the following script to generate the XSPEC table model:
 Output: yllext.mod
 
 # 5. XSPEC Usage
-XSPEC12> model mtable{yllext.mod}*powerlaw
+> XSPEC12> model mtable{yllext.mod}*powerlaw
 
 Parameters:
 - N_H (10^22 cm^-2)
@@ -40,7 +40,7 @@ Parameters:
 # 6. Example Fit
 Start XSPEC and run full fitting pipeline
 
-XSPEC12> @example.xcm
+> XSPEC12> @example.xcm
 
 This script will:
 - Load NICER Crab pulsar spectrum
