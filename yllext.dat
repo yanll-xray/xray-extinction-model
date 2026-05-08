@@ -24,7 +24,7 @@
 #  2 Gas_abs (cm^2/H)
 #  3 Dust_abs (cm^2/H)
 #  4 Dust_sca (cm^2/H)
-#  5 Total_ext(= gas absorption + dust absorption + dust scattering) (cm^2/H)   
+#  5 Total_ext (= gas absorption + dust absorption + dust scattering) (cm^2/H)   
 #  
 #    Energy            Gas_abs           Dust_abs           Dust_sca          Total_ext
      100.000       7.038360e-20       4.065656e-22       3.140803e-22       7.110425e-20
