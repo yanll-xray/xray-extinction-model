@@ -1,6 +1,6 @@
 # 1. Overview
 This repository provides an interstellar X-ray extinction model
-(Yan et al. 2026, ApJ, xxx, xxx; DOI: xxxxxxxx).
+(Yan, Li, & Lu 2026, ApJ, 1004, 253, doi:10.3847/1538-4357/ae6b8a).
 
 This model presents the energy-dependent X-ray extinction in the interstellar medium, 
 including gas absorption, dust absorption, and dust scattering, by utilizing the latest 
@@ -50,7 +50,7 @@ This script will:
 - Save PS output
 
 # 7. Citation
-L.L. Yan, A. Li, & F.J. Lu (2026), ApJ, xxx, xxx 
+L.L. Yan, A. Li, & F.J. Lu (2026), ApJ, 1004, 253
 
 Contact: Linli Yan (yan.linli@foxmail.com) or Aigen Li (LiA@missouri.edu)
 
